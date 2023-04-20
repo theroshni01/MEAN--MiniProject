@@ -1,0 +1,24 @@
+{{#if hasError}}
+<div>
+{{#each messages}}
+ <h3>{{this}}</h3>
+ {{/each}}
+</div>
+{{/if}}
+
+
+<div class="container">
+    <h1>Register Here</h1>
+
+    <form action="/user/signup" method="post">
+
+        <input type="email" name="email" id="email" placeholder="Enter Email" required><br><br>
+
+        <input type="password" name="password" id="password" placeholder="Enter Password" required><br><br>
+
+        <input type="hidden" name="_csrf" value="{{ csrfToken }}"><br><br>
+
+        <button type="submit">Sign Up</button> 
+        
+    </form>
+</div>

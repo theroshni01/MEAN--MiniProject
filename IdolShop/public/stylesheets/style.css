@@ -1,0 +1,13 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+marquee{
+    color:blueviolet;
+    font-size: 32px;
+    background-color: bisque;
+}
+
+.btn-success{
+  color: green;
+}

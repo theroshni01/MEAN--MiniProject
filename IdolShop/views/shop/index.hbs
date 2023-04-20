@@ -1,0 +1,27 @@
+<img src="https://i.pinimg.com/originals/be/35/2c/be352c17d7e40180dbf9258c9d974067.jpg" width="100%" height="30%">
+
+<marquee behavior=" " direction="">Borahea Army!!!</marquee>
+
+<h2>Our Products</h2>
+{{#each products}}
+
+<div class="container">
+  <div class="card-group">
+    {{#each this}}
+    <div class="card">
+      <img height="500" width="1px" src="{{this.imagePath}}" class="card-img-top" >
+      <div class="card-body">
+        <h5 class="card-title">{{this.title}}</h5>
+        <p class="card-text">{{this.description}}</p>
+        <p>Price:{{this.price}}</p>
+      </div>
+      <div class="card-footer">
+        <p><a href="/add-to-cart/{{this._id}}">
+        <button style="float:right; color:aliceblue; background:darkgreen">Add to cart</button>
+        </a></p>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
+{{/each}}
